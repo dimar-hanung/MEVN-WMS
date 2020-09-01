@@ -1,9 +1,7 @@
 <template>
 
   <v-card>
-      <v-alert type="success">
-      I'm a success alert.
-    </v-alert>
+    <all-product-modal/>
     <v-card-title>
       All Product
       <v-spacer></v-spacer>
@@ -42,6 +40,7 @@
 </style>
 <script>
 import { mapState, mapActions } from "vuex";
+import AllProductModal from "@/components/modal/AllProduct.vue";
 export default {
   data() {
     return {
@@ -61,6 +60,9 @@ export default {
         { text: "supplier", value: "dimar" },
       ],
     };
+  },
+  components:{
+      AllProductModal
   },
   methods: {
     ...mapActions("Auth", ["getAllProduct", "deleteProduct"]),

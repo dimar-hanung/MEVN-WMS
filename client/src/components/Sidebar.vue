@@ -29,8 +29,9 @@ export default {
 <style>
 
 .sidebar{
-    @apply bg-gray-400;
-    max-width:250px;
+    @apply bg-white;
+    max-width:300px;
+    min-width: 250px;
     height: 100%;
 }
 .side-lists{

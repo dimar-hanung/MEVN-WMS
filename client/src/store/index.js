@@ -82,7 +82,6 @@ const Auth = {
           } = res;
           // commit("saveLogin", data);
           router.push("/login");
-
           console.log(data);
         })
         .catch((error) => {
@@ -90,6 +89,20 @@ const Auth = {
         });
       // const { data } = await Api.post("/auth/login", { data: payload });
       console.log({ commit });
+    },
+    async addProduct() {
+      // upload file
+      const formData = new FormData();
+      formData.append("photo", this.FILE, this.FILE.name);
+      console.log(this.file.name);
+      formData.append("name", this.name);
+      Api.post("/product", formData, {}).then((res) => {
+        console.log(res);
+      });
+    },
+    onFileUpload (event) {
+      this.FILE = event.target.files[0];
+      console.log(this.FILE)
     },
     async getAllProduct({ commit }) {
       Api.get("/product?limit=1000")

@@ -3,14 +3,25 @@
 - [x] Login
 - [x] Register
 - [x] Product List
+- [x] Delete Product
+- [x] Add Product
+- [ ] Edit Product
+- [ ] Show User
+- [ ] Product In
+- [ ] Product Out
+- [ ] Download Report
 
 ## How to run
 1. `npm install`
 1. `npm run serve`
 
 
+## Problem
+- [ ] Ketika pertama kali signin authenticate belum bisa, karena cache belum terbaca
+
 ## Technique
 - [x] Tailwindcss
+- [x] vuetifyjs
 - [x] Datatables menggunakan https://vuetifyjs.com/en/components/data-tables/
 - [x] Mengecualikan komponen pada routes tertentu \
 Menggunakan !meta , referensi : https://github.com/vuejs/vue-router/issues/254

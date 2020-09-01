@@ -1,11 +1,12 @@
 <template>
-  <div data-app id="app" class="flex">
-    <sidebar :user_login="this.user.username" v-if="!$route.meta.hideNavigation" />
-
+  <div data-app id="app" class="flex" >
+    <sidebar
+      :user_login="this.user.username"
+      v-if="!$route.meta.hideNavigation"
+    />
     <div class="container content-wrap">
-    	<div class="main-content">
+      <div class="main-content">
         <router-view />
-        
       </div>
     </div>
   </div>
@@ -23,8 +24,8 @@ export default {
     Sidebar,
   },
   computed: {
-    ...mapState("Auth", ["user"]),
+    ...mapState("Auth", ["user","token"]),
   },
+ 
 };
-
 </script>
