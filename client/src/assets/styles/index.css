@@ -16,8 +16,8 @@ html, body,#app{
 .main-content{
   @apply bg-white w-full h-full shadow-lg rounded p-5;
   max-width:1366px;
-  height: min-content;
-  min-height:768px;
+  height: 100%;
+  /* min-height:768px; */
 }
 
 .input {

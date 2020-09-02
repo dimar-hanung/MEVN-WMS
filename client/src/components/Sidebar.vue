@@ -13,6 +13,7 @@
     <router-link to="user" class="side-lists">
       User
     </router-link>
+    <router-link to="login">Log Out</router-link>
   </div>
 </template>
 
